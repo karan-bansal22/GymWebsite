@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fitness</title>
+<link href="./Body Fitness_files/css2" rel="stylesheet"><link rel="stylesheet" href="./Body Fitness_files/style.css"><style>
+    /* CSS reset */
+    body {
+        font-family: 'Carter One', cursive;
+
+        margin: 0px;
+        color: red;
+        padding: 0px;
+        background: url('image/gym.jpeg');
+    }
+
+    .left {
+        
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 60px;
+
+    }
+
+    .mid {
+
+        width: 38%;
+        display: block;
+        margin: 20px auto;
+        top: 0px;
+
+
+    }
+
+    .right {
+
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 23px 13px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: violet;
+
+    }
+
+    .left img {
+        width: 97px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .btn {
+        font-family: 'Carter One', cursive;
+
+        margin: 0px 10px;
+        color: darkorange;
+        padding: 5px 8px;
+        border: 2px solid gold;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: honeydew;
+    }
+
+    .container {
+        
+        margin: 106px 80px;
+        padding: 65px;
+        width: 50%;
+        border-radius: 30px;
+        
+        font-family: 'Carter One', cursive;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 30%;
+        padding: 1px;
+        margin: 15px auto;
+        font-size: 15px;
+        border-radius: 15px;
+        font-family: 'Carter One', cursive;
+
+    }
+    .container h1{
+        text-align:center ;
+    }
+    .container button{
+        display: block;
+        width: 20%;
+        margin: 34px auto;
+        
+    }
+</style></head>
+
+
+
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="./Body Fitness_files/bg.jpg" alt="">
+            <div>Body FitnessS</div>
+
+        </div>
+        <!-- mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/index.html#" class="active">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Fitness Calculator</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Bilaspur Now</h1>
+        <form action="http://127.0.0.1:5500/noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></body></html>

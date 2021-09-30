@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Carter One', cursive;
+
+        margin: 0px;
+        color: red;
+        padding: 0px;
+        background: url('image/gym.jpeg');
+    }
+
+    .left {
+        
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 60px;
+
+    }
+
+    .mid {
+
+        width: 38%;
+        display: block;
+        margin: 20px auto;
+        top: 0px;
+
+
+    }
+
+    .right {
+
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 23px 13px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: violet;
+
+    }
+
+    .left img {
+        width: 97px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .btn {
+        font-family: 'Carter One', cursive;
+
+        margin: 0px 10px;
+        color: darkorange;
+        padding: 5px 8px;
+        border: 2px solid gold;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: honeydew;
+    }
+
+    .container {
+        
+        margin: 106px 80px;
+        padding: 65px;
+        width: 50%;
+        border-radius: 30px;
+        
+        font-family: 'Carter One', cursive;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 30%;
+        padding: 1px;
+        margin: 15px auto;
+        font-size: 15px;
+        border-radius: 15px;
+        font-family: 'Carter One', cursive;
+
+    }
+    .container h1{
+        text-align:center ;
+    }
+    .container button{
+        display: block;
+        width: 20%;
+        margin: 34px auto;
+        
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="image/bg.jpg" alt="">
+            <div>Body FitnessS</div>
+
+        </div>
+        <!-- mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Bilaspur Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+</body>
+
+</html>
